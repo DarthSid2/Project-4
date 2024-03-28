@@ -2,6 +2,8 @@ from panda3d.core import *
 from direct.showbase.ShowBase import ShowBase
 from panda3d.core import Vec3
 from direct.task import Task
+from collideObjectBase import * 
+from typing import Callable
 
 class Universe(ShowBase):
     def __init__ (self, loader: Loader, modelPath: str, parentNode: NodePath, NodeName: str, texPath: str, posVec: Vec3, scaleVec: float):
