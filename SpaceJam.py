@@ -107,7 +107,7 @@ class SpaceJam(ShowBase):
         self.Ship1.setTexture(tex, 1)
         (self.task_mgr, self.render, self.accept)
 
-        self.Station1 = self.loader.loadModel("./Assets/SpaceStation1B/spaceStation.x.")
+        self.Station1 = self.loader.loadModel("./Assets/SpaceStation1B/spaceStation.x")
         self.Station1.reparentTo(self.render)
         self.Station1.setPos(110, 3300, 120)
         self.Station1.setScale(25)

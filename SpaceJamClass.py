@@ -27,7 +27,7 @@ class Planets(ShowBase):
         tex = loader. loadTexture(texPath)
         self.modelNode.setTexture(tex, 1 )    
 
-class SpaceDrones(ShowBase):
+class Drones(ShowBase):
     droneCount = 0 
    
     def __init__(self, loader: Loader, modelPath: str, parentNode: NodePath, nodeName: str, texPath: str, posVec: Vec3, scaleVec: float):
@@ -65,7 +65,7 @@ class SpaceShip_1(ShowBase):
         tex = loader.loadTexture(texPath)
         self.modelNode.setTexture(tex, 1)
         self.taskManager = self.taskMgr()
-
+        self.SetkeyBindings()
 
 
     def Thrust(self, keyDown):
